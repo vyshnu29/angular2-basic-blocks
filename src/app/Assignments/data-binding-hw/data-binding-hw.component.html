@@ -1,0 +1,6 @@
+
+<div class="container">
+    <input type="text" [(ngModel)]="username" >
+    <p>Username : {{username}}</p>
+    <button type="button" [disabled]="!username" (click)="username = ''" >Clickable</button>
+</div>

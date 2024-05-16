@@ -1,0 +1,11 @@
+<button (click)="onButtonToggle()">Display Details</button>
+<p *ngIf="isVisible">Secret Password : tuna</p>
+
+<p *ngFor="let item of loggedClick; let i = index" 
+[ngClass]="{
+    'text-color' : i >= 5
+}"
+[ngStyle]="{
+   backgroundColor : i >= 5 ? 'blue' : 'transparent',
+  
+}"> {{item}}</p>
